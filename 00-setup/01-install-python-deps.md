@@ -2,12 +2,6 @@
 
 ## Create a Virtual Environment
 
-```powershell
-cd C:\Users\Hari\Desktop\llm_learning
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-```
-
 ## Install Core Packages
 
 ```powershell

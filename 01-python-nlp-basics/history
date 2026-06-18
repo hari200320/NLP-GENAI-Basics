@@ -1,0 +1,32 @@
+<!-- INSTALL Markdown Preview Enhanced AND HIT CTRL+SHIFT+V to get a clean table view-->
+
+# Evolution of NLP → LLMs
+
+| Technique | Timeline | Key Idea / Definition | Why It Was Needed | Major Drawback | Next Evolution |
+|------------|------------|------------|------------|------------|------------|
+| Rule-Based NLP | 1950s–1980s | Hand-written grammar and language rules | First attempt at language understanding | Doesn't scale, brittle, difficult to maintain | Statistical NLP |
+| Statistical NLP | 1980s–2000s | Uses probabilities learned from data | Reduce manual rule writing | Cannot capture deep semantic meaning | BoW, N-Grams |
+| Bag of Words (BoW) | 1990s | Represents text using word counts | Convert text into numerical vectors | Loses word order and context | TF-IDF |
+| TF-IDF | 1990s | Weights rare words higher than common words | Improve document retrieval and search | Still ignores semantics and word meaning | Word Embeddings |
+| N-Grams | 1990s–2010s | Predicts using previous N words | Capture local context and word order | Limited context window | Neural Language Models |
+| Feed Forward Neural LM | Early 2000s | Uses neural networks for next-word prediction | Learn patterns automatically | Fixed-size context window | RNN |
+| Word2Vec | 2013 | Learns dense vector representations of words | Capture semantic similarity | Same vector regardless of context | Contextual Embeddings |
+| GloVe | 2014 | Embeddings using global word co-occurrence statistics | Better semantic relationships | One vector per word | Context-aware Models |
+| RNN | 2014 | Maintains hidden state across sequence | Process variable-length text | Vanishing gradients, forgets long context | LSTM |
+| LSTM | 2015 | Adds memory gates to RNN | Preserve long-term dependencies | Sequential and slow to train | GRU |
+| GRU | 2015 | Simplified LSTM with fewer gates | Faster training than LSTM | Still sequential processing | Attention |
+| Seq2Seq | 2014–2016 | Encoder converts input to vector, decoder generates output | Translation and text generation | Information bottleneck | Attention |
+| Attention Mechanism | 2014–2017 | Focuses on relevant words dynamically | Avoid encoder bottleneck | Still relies on RNNs | Transformer |
+| Transformer | 2017 | Uses self-attention instead of recurrence | Parallel training and long-range dependencies | O(n²) attention cost | Efficient Transformers |
+| BERT | 2018 | Encoder-only Transformer with bidirectional context | Better language understanding | Cannot generate text effectively | GPT |
+| GPT-1 | 2018 | Decoder-only Transformer for generation | Scalable text generation | Small model capacity | GPT-2 |
+| GPT-2 | 2019 | Larger autoregressive Transformer | Better text generation quality | Limited reasoning and knowledge | GPT-3 |
+| GPT-3 | 2020 | Massive Transformer with few-shot learning | General-purpose language tasks | Hallucinations, expensive training | Instruction Tuning, RLHF |
+| Instruction Tuning | 2021–2022 | Fine-tunes model on instructions | Improve usability and task following | Alignment still imperfect | RLHF |
+| RLHF | 2022 | Reinforcement Learning from Human Feedback | Align model behavior with human preferences | Expensive human annotation | RLAIF, Constitutional AI |
+| ChatGPT | 2022 | GPT + Instruction Tuning + RLHF | Conversational AI | Hallucinations, knowledge cutoff | RAG |
+| LoRA | 2021 | Trains small adapter matrices instead of full model | Cheap fine-tuning | Requires full-precision model loading | QLoRA |
+| QLoRA | 2023 | Fine-tunes quantized models | Makes large-model fine-tuning affordable | Small accuracy tradeoff | Advanced PEFT |
+| RAG | 2023 | Retrieves external documents before generation | Access up-to-date information | Retrieval quality affects output | Agentic Systems |
+| Mixture of Experts (MoE) | 2023–Present | Activates only a subset of model parameters | Scale models efficiently | Complex routing | Better Expert Routing |
+| Agentic AI | 2024–Present | LLMs plan, reason, use tools, and take actions | Solve multi-step tasks autonomously | Reliability and verification issues | Multi-Agent & Reasoning Systems |
